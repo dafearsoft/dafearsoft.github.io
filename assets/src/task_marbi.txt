@@ -1,0 +1,12 @@
+- form project (CRUD) > tb_project cartnya tb_project_products
+- form portfolio (CRUD) > jika showViewDemo/showVisiPage dipilih yes maka textbox url ditampilkan jika no sebaliknya
+- form services (CRUD)
+- form faq (CRUD)
+- form about_us (CRUD) > cartnya 2 vi_team_profile_social_media sama vi_team_profile_skills.
+  di cart vi_team_profile_social_media, pilihan social media berasal dari tb_social_media tampilkan dengan radio,
+  field websiteIcon ga usah ditampilin karna cuman dipake di frontend nantinya
+- di blog (proweb juga). author_sl dan el. namanya diotomatisin juga (ky di news)
+
+
+DASHBOARD
+- banner dapat difiliter berdasar draft/publish

@@ -1,0 +1,53 @@
+@import "main.scss";
+#wrapper {
+    .page-title {
+        background: #a9cde5;
+        h3 {
+            margin: 0;
+            padding: 11px 25px 11px 25px;
+        }
+    }
+    .content {
+        background: #fff;
+        padding-top: 25px;
+        h3 {
+            margin: 0;
+            padding: 0!important;
+        }
+        .content-list {
+            margin-bottom: 25px;
+        }
+        .content-kanan {
+            .head-content-kanan {
+                background: #a9cde5;
+                padding: 0 11px 0 11px;
+            }
+            .detail-content-kanan {
+                ul,
+                li {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                }
+                ul {
+                    margin: 2em 0;
+                }
+                li {
+                    margin: 1em;
+                    margin-left: 3em;
+                    border-bottom: 1px dashed #93C0DE;
+                }
+                li:before {
+                    content: '\f046';
+                    font-family: 'FontAwesome';
+                    float: left;
+                    margin-left: -1.5em;
+                    color: #93C0DE;
+                }
+            }
+            .bottom-content-kanan {
+                padding: 0 11px 0 11px;
+            }
+        }
+    }
+}

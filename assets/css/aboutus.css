@@ -1,0 +1,691 @@
+/*Fonts*/
+/* line 2, ../scss/main.scss */
+body {
+  background-color: #3C4952;
+  background-image: url(../img/grid.png);
+  font-family: Ubuntu-R, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* line 14, ../scss/main.scss */
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/*===========================================================================Navigasi====================*/
+/* line 22, ../scss/main.scss */
+.navbar-default {
+  border: none;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(130, 158, 176, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(130, 158, 176, 0.75);
+  box-shadow: 0px 1px 3px 0px rgba(130, 158, 176, 0.75);
+}
+
+/* line 30, ../scss/main.scss */
+.navbar-static-top {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-image: -webkit-gradient(linear, right bottom, right top, color-stop(1, #89b2cd), color-stop(1, #d5e9f5));
+  background-image: -o-linear-gradient(top, #89b2cd 100%, #d5e9f5 100%);
+  background-image: -moz-linear-gradient(top, #89b2cd 100%, #d5e9f5 100%);
+  background-image: -webkit-linear-gradient(top, #89b2cd 100%, #d5e9f5 100%);
+  background-image: -ms-linear-gradient(top, #89b2cd 100%, #d5e9f5 100%);
+  background-image: linear-gradient(to top, #89b2cd 100%, #d5e9f5 100%);
+  background-image: url(../img/bar.png);
+  background-repeat: repeat-x;
+}
+
+/* line 44, ../scss/main.scss */
+.navbar-static-top .navbar-nav > li > a {
+  color: #000;
+}
+
+/* line 48, ../scss/main.scss */
+.navbar-static-top .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: #accee5;
+  -webkit-transition: all ease-in .3s;
+  -o-transition: all ease-in .3s;
+  -moz-transition: all ease-in .3s;
+  -ms-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+  opacity: 0.6;
+}
+
+/* line 59, ../scss/main.scss */
+.navbar-static-top .navbar-brand {
+  font-size: 14px;
+  color: #4D5061;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+/* line 66, ../scss/main.scss */
+.navbar-static-top .navbar-brand::after {
+  content: "|";
+  font-size: 20px;
+  color: #4D5061;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+/* line 76, ../scss/main.scss */
+.navbar-static-top .dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #4D5061;
+  font-weight: 200;
+  background-color: #accee5;
+  background-image: none;
+  background-repeat: none;
+  -webkit-transition: all ease-in .3s;
+  -o-transition: all ease-in .3s;
+  -moz-transition: all ease-in .3s;
+  -ms-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+/* line 94, ../scss/main.scss */
+.navbar-default .navbar-nav > li.dropdown.active.open > a,
+.navbar-default .navbar-nav > li.dropdown.active.open > ul.dropdown-menu a:hover,
+.navbar-default .navbar-nav > li.dropdown.open > a,
+.navbar-default .navbar-nav > li.dropdown.open > ul.dropdown-menu a:hover {
+  color: #fff;
+  background-color: #accee5;
+  border-color: #fff;
+}
+
+/* line 100, ../scss/main.scss */
+.navbar-default .navbar-nav > .active {
+  color: #fff;
+  background: #accee5;
+  opacity: 0.8;
+}
+
+/* line 108, ../scss/main.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background: #accee5;
+}
+
+/* line 113, ../scss/main.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 121, ../scss/main.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 124, ../scss/main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 130, ../scss/main.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 133, ../scss/main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 138, ../scss/main.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  /* line 144, ../scss/main.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  /* line 149, ../scss/main.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes flipInX {
+  /* line 157, ../scss/main.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  /* line 164, ../scss/main.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 170, ../scss/main.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  /* line 175, ../scss/main.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  /* line 179, ../scss/main.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  /* line 186, ../scss/main.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  /* line 193, ../scss/main.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 199, ../scss/main.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  /* line 204, ../scss/main.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  /* line 208, ../scss/main.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+/* line 214, ../scss/main.scss */
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+@-webkit-keyframes flipInY {
+  /* line 222, ../scss/main.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  /* line 229, ../scss/main.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 235, ../scss/main.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  /* line 240, ../scss/main.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  /* line 244, ../scss/main.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+/* line 250, ../scss/main.scss */
+#login-dp {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 257, ../scss/main.scss */
+#login-dp .help-block {
+  font-size: 12px;
+}
+
+/* line 261, ../scss/main.scss */
+#login-dp .bottom {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 14px;
+}
+
+/* line 268, ../scss/main.scss */
+#login-dp .social-buttons {
+  margin: 12px 0;
+}
+
+/* line 272, ../scss/main.scss */
+#login-dp .social-buttons a {
+  width: 49%;
+}
+
+/* line 276, ../scss/main.scss */
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+
+/* line 280, ../scss/main.scss */
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+/* line 285, ../scss/main.scss */
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc;
+}
+
+/* line 290, ../scss/main.scss */
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+
+/* line 295, ../scss/main.scss */
+.btn-tw:hover {
+  color: #fff;
+  background-color: #59b5fa;
+}
+
+@media (max-width: 768px) {
+  /* line 301, ../scss/main.scss */
+  #login-dp {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  /* line 305, ../scss/main.scss */
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none;
+  }
+}
+/*================================================Logo & Banner & Footer====================================================*/
+/* line 314, ../scss/main.scss */
+.top-logo {
+  background: #fff;
+}
+
+/* line 319, ../scss/main.scss */
+#wrapper .banner-top {
+  background-color: #0D4052;
+  background-image: url(../img/banner.png);
+  background-repeat: repeat-x;
+  color: #bce9f5;
+  /*text-shadow: 1px 1px 1px darkblue;  */
+  padding: 15px 11px 30px 11px;
+}
+/* line 327, ../scss/main.scss */
+#wrapper .banner-top .banner-kiri h3 {
+  font: 24px Ubuntu-R;
+  margin-bottom: 32px;
+}
+/* line 331, ../scss/main.scss */
+#wrapper .banner-top .banner-kiri p {
+  font: 14px Ubuntu-R;
+  margin-bottom: 32px;
+}
+/* line 335, ../scss/main.scss */
+#wrapper .banner-top .banner-kiri a {
+  margin-bottom: 25px;
+}
+/* line 340, ../scss/main.scss */
+#wrapper .banner-top .banner-kanan img {
+  margin: 0 auto;
+}
+
+/*Carousel Indicator Position*/
+/* line 350, ../scss/main.scss */
+.carousel-indicators {
+  position: absolute;
+  bottom: 3px;
+  left: 50px;
+  z-index: 11;
+  list-style: none;
+}
+
+/*Carousel Fade*/
+/* line 361, ../scss/main.scss */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/* line 369, ../scss/main.scss */
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+/* line 374, ../scss/main.scss */
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 381, ../scss/main.scss */
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+/* line 385, ../scss/main.scss */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* line 391, ../scss/main.scss */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+/* line 396, ../scss/main.scss */
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+/* line 401, ../scss/main.scss */
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+/* line 407, ../scss/main.scss */
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+/* line 412, ../scss/main.scss */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* line 417, ../scss/main.scss */
+.scroll-up {
+  position: fixed;
+  display: none;
+  z-index: 99999;
+  bottom: 2em;
+  right: 2em;
+}
+/* line 423, ../scss/main.scss */
+.scroll-up a {
+  background-color: #678eca;
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 1px solid #678eca;
+}
+
+/*Bahasa*/
+/* line 440, ../scss/main.scss */
+.bahasa {
+  padding-top: 15px;
+}
+/* line 442, ../scss/main.scss */
+.bahasa img {
+  /*width: 32px;
+  height: 19px;*/
+  margin-left: 7px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+/* line 449, ../scss/main.scss */
+.bahasa img:hover {
+  opacity: 0.7;
+}
+/* line 453, ../scss/main.scss */
+.bahasa span {
+  font-size: 13px;
+}
+
+/*Tiny MCE*/
+/* line 461, ../scss/main.scss */
+.img-left {
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+/* line 464, ../scss/main.scss */
+.img-left img {
+  float: left;
+  max-width: 220px;
+  margin-right: 11px;
+  opacity: 0.7;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-top: 5px;
+}
+/* line 479, ../scss/main.scss */
+.img-left .tinymce-title h1,
+.img-left .tinymce-title h2,
+.img-left .tinymce-title h3,
+.img-left .tinymce-title h4,
+.img-left .tinymce-title h5,
+.img-left .tinymce-title h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu-L;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+/* line 492, ../scss/main.scss */
+.img-left .tinymce-desc p,
+.img-left .tinymce-desc span,
+.img-left .tinymce-desc div {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu-L;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+/* line 505, ../scss/main.scss */
+.img-center {
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+/* line 508, ../scss/main.scss */
+.img-center img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+/* line 518, ../scss/main.scss */
+.img-center .tinymce-title h1,
+.img-center .tinymce-title h2,
+.img-center .tinymce-title h3,
+.img-center .tinymce-title h4,
+.img-center .tinymce-title h5,
+.img-center .tinymce-title h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu-L;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+/* line 530, ../scss/main.scss */
+.img-center .tinymce-desc p,
+.img-center .tinymce-desc span,
+.img-center .tinymce-desc div {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu-L;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+/* line 544, ../scss/main.scss */
+.navbar-nav a {
+  text-transform: uppercase!important;
+}
+
+/* line 549, ../scss/main.scss */
+.gallery {
+  background: #fff;
+  padding-bottom: 25px;
+}
+/* line 552, ../scss/main.scss */
+.gallery .img-thumbnail {
+  margin-bottom: 11px;
+}
+
+/*Table Project*/
+/* line 561, ../scss/main.scss */
+thead th {
+  text-transform: uppercase!important;
+}
+
+/*Title*/
+/* line 569, ../scss/main.scss */
+.content-kanan h3, .content-kiri h3 {
+  padding: 0!important;
+}
+
+/*Foto About Us*/
+/* line 575, ../scss/main.scss */
+.foto img {
+  max-width: 128px!important;
+}
+
+/* line 3, ../scss/aboutus.scss */
+#wrapper .page-title {
+  background: #a9cde5;
+}
+/* line 5, ../scss/aboutus.scss */
+#wrapper .page-title h3 {
+  margin: 0;
+  padding: 11px 25px 11px 25px;
+}
+/* line 10, ../scss/aboutus.scss */
+#wrapper .content {
+  padding-top: 25px;
+  background: #fff;
+}
+/* line 13, ../scss/aboutus.scss */
+#wrapper .content h3 {
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+}
+/* line 18, ../scss/aboutus.scss */
+#wrapper .content .content-list {
+  margin-bottom: 25px;
+}
+/* line 22, ../scss/aboutus.scss */
+#wrapper .content .content-kanan .head-content-kanan {
+  background: #a9cde5;
+  padding: 0 11px 0 11px;
+}
+/* line 28, ../scss/aboutus.scss */
+#wrapper .content .content-kanan .detail-content-kanan ul,
+#wrapper .content .content-kanan .detail-content-kanan li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 33, ../scss/aboutus.scss */
+#wrapper .content .content-kanan .detail-content-kanan ul {
+  margin: 2em 0;
+}
+/* line 36, ../scss/aboutus.scss */
+#wrapper .content .content-kanan .detail-content-kanan li {
+  margin: 1em;
+  margin-left: 3em;
+  border-bottom: 1px dashed #93C0DE;
+}
+/* line 41, ../scss/aboutus.scss */
+#wrapper .content .content-kanan .detail-content-kanan li:before {
+  content: '\f046';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #93C0DE;
+}
+/* line 49, ../scss/aboutus.scss */
+#wrapper .content .content-kanan .bottom-content-kanan {
+  padding: 0 11px 0 11px;
+}

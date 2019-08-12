@@ -1,0 +1,31 @@
+1) copy folder proweb-cms rename jadi dafearsoft
+
+2) buka file application/config/config.php
+line 6 merupakan judul utama website, bisa diisi dengan 'Dafearsoft'
+line 7 merupakan security key utk mengakses api, bisa diisi bebas,
+baiknya setiap website baru punya key yg berbeda
+line 8 s/d 10 merupakan akun Super Admin pada dashboard
+line 35 merupakan alamat/base path dari website,
+dalam hal ini dapat diisi dengan http://localhost/dafearsoft
+
+3) buka file application/config/database.php
+file ini merupakan file settingan database
+tinggal di edit dan disesuaikan saja dengan database yg ada
+dalam hal ini copy saja db_proweb menjadi db_dafearsoft
+
+4) buka file scoopy/application/config/Config.js
+file ini merupakan settingan javascript untuk bagian websitenya
+line 4 adalah judul utama dari website, bisa diganti jadi 'Dafearsoft'
+line 8 adalah url untuk request api bisa diisi dengan http://localhost/dafearsoft/api
+
+5) buka file dashboard/application/config/Config.js
+ini adalah config utk mengatur dashboard
+line 4 adalah judul utama dari website, bisa diganti jadi 'Dafearsoft'
+line 5 bagian ini adalah jika mau mengganti nama folder dashboard, biarkan saja tetap 'dashboard'
+line 10 jika di set true maka dashboard akan mencari sendiri secara otomatis alamat apinya
+gunanya ketika client kita punya 2 domain, atau mengakses web dengan www, dashboard otomatis nyesuain
+biarkan saja line 10 ini di set true
+line 11 adalah alamat dari website bisa diisi dengan 'http://localhost/dafearsoft'
+line 12 adalah alamat utk request api bisa diisi dengan 'http://localhost/dafearsoft/api'
+line 6 jika biLingual di set true, maka akan muncul flag language di kanan atas dashboard
+line 15 disini kita dapat mengatur flag yg keluar bahasa apa saja

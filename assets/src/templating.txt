@@ -1,0 +1,19 @@
+file yg terlibat sebagai template pada dasarnya adalah
+
+Main.php : file ini adalah baju utama dari website
+Header.php : file ini adalah bagian atas website
+Footer.php : file ini adalah bagian bawah website
+
+dengan adanya sistem template, jadi kita tak perlu mengulang2 bagian2 tersebut di setiap halaman web
+
+file Main.php
+line 40 disini kita load file Header
+line 43 disini kita akan menempatkan setiap content per page yg akan di load
+line 46 disini kita load file Footer
+
+data yg di extract ke Header/Footer
+
+data pada dasarnya diextract dari model
+penempatan controllernya adalah ada pada file  application/core/MY_Controller.php
+untuk data header adalah pada line 209 (getHeadData())
+untuk data header adalah pada line 226 (getFootData())

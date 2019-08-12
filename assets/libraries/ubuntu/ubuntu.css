@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+@font-face {
+    font-family: 'Ubuntu-R';
+    src: url('Ubuntu-Regular.ttf');
+    /* IE9 Compat Modes */
+    src: url('Ubuntu-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-L';
+    src: url('Ubuntu-Light.ttf');
+    /* IE9 Compat Modes */
+    src: url('Ubuntu-Light.ttf') format('truetype');
+    font-style: normal;
+}

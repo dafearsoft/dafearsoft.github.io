@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dafearsoft</title>
+
+  <meta name="keywords" content="dafearsoft,cash point,cash point 2011,kasir,point of sale,usaha kecil menengah,ukm,website,cms,developer,php,mysql,javascript,jquery,teknologi,informasi">
+  <meta name="description" content="Menerima pembuatan Custom Website Company Profile dan Product Katalog (Perdagangan Online) dengan menggunakan sistem CMS original buatan kami. Kami melayani pembuatan Website dengan harga yg cukup ekonomis untuk kualitas yg cukup baik.">
+
+  <link rel="icon" href="assets/img/favicon.png">
+  <!-- Lib -->
+  <link href="assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/libraries/ubuntu/ubuntu.css" rel="stylesheet" type="text/css">
+  <script src="assets/libraries/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <!--Custom-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <script>
+  $.ajax({
+    url: 'header.html',
+    method: 'POST',
+    async: false,
+    cache: false,
+    success: function (result) {
+      document.write(result);
+    },
+  });
+  </script>
+
+  <div id="wrapper">
+    <div class="container-fluid">
+      <div class="main-content-product">
+        <div class="container">
+          <script>
+          $.ajax({
+            url: 'bannertop.html',
+            method: 'POST',
+            async: false,
+            cache: false,
+            success: function (result) {
+              document.write(result);
+            },
+          });
+          </script>
+          <div class="col-md-12 reset-col">
+            <div class="page-title">
+              <h3>Product</h3>
+            </div>
+          </div>
+
+          <!-- Breadcrumb -->
+          <div class="col-md-12 reset-col">
+            <div class="breadcrumb-title">
+              <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></li>
+                <li>Product</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Breadcrumb -->
+
+          <div class="col-md-12 content">
+            <div class="col-sm-12 reset-col product-list">
+              <h4>Website/ CMS</h4>
+              <div class="col-sm-4 reset-col product-img">
+                <img src="assets/img/slide.png" class="img-responsive" alt="">
+              </div>
+              <div class="col-sm-8 reset-col product-desc">
+                <p>
+                  Menerima pembuatan Custom Website Company Profile dan Product Katalog (Perdagangan Online)
+                  dengan menggunakan sistem CMS original buatan kami.
+                  Kami melayani pembuatan Website dengan harga yg cukup ekonomis untuk kualitas yg cukup baik.
+                </p>
+                <a href="product-detail.html" class="btn btn-default pull-right">Read More</a>
+                <div class="clearfix"></div>
+              </div>
+
+            </div>
+            <div class="col-sm-12 reset-col product-list">
+              <h4>Cash Point</h4>
+              <div class="col-sm-4 reset-col product-img">
+                <img src="assets/img/slide2.png" class="img-responsive" alt="">
+              </div>
+              <div class="col-sm-8 reset-col product-desc">
+                <p>
+                  Cash Point adalah program aplikasi penjualan yang dibuat untuk kebutuhan sistem komputerisasi penjualan
+                  pada usaha kecil menengah antara lain seperti toko, restoran dan lain-lain.
+                  Dapatkan dan gunakan secara gratis program aplikasi ini tanpa pungutan biaya.
+                </p>
+                <a href="product-detail.html" class="btn btn-default btn-readmore pull-right">Read More</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $.ajax({
+        url: 'footer.html',
+        method: 'POST',
+        async: false,
+        cache: false,
+        success: function (result) {
+          document.write(result);
+        },
+      });
+    </script>
+  </div>
+   <!--Lib-->
+    <div class="scroll-up">
+        <a href="body"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <script src="assets/libraries/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
